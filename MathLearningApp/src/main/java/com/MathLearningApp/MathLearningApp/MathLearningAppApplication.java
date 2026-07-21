@@ -19,7 +19,7 @@ public class MathLearningAppApplication {
                @Override
                public void addCorsMappings(CorsRegistry registry) {
                   registry.addMapping("/api/**")
-                          .allowedOrigins("https://mathlearningapps.netlify.app/")
+                          .allowedOrigins("https://mathlearningapps.netlify.app")
                           .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
                }
            };
