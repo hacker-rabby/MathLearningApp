@@ -1,18 +1,9 @@
-server:
-  port: 8080
 spring:
   application:
     name: MathLearningApp
-  datasource:
-    url: jdbc:mysql://127.0.0.1:3306/mathLearningApp
-    username: root
-    password: 177@Hacker
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
-        dialect: org.hibernate.dialect.MySQLDialect
+
+  profiles:
+    active: dev
+
+server:
+  port: ${PORT:8080}
