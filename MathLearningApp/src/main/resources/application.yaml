@@ -2,8 +2,5 @@ spring:
   application:
     name: MathLearningApp
 
-  profiles:
-    active: dev
-
 server:
   port: ${PORT:8080}
